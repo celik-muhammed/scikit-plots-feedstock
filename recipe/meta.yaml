@@ -21,13 +21,13 @@ source:
   # url: https://github.com/scikit-plots/scikit-plots/archive/v0.4.0.tar.gz
   url: https://github.com/{{ name }}/{{ name }}/archive/{{ "v" ~ version }}{{ tag }}.tar.gz
   # curl -L https://github.com/scikit-plots/scikit-plots/archive/v0.4.0.tar.gz | sha256sum
-  sha256: 572d0aa9dc535ccc9d2fbb1e1c455d7f1dee83e2a32d2b2775e03b5b232d46de
+  sha256: 0606a1fc25cb6bcaac22a4bd74adbbe687dd4170241dd8f9f306b606ded7e49f
 
 # https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html
 # https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string
 # https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#preprocessing-selectors
 build:  
-  number: 2
+  number: 10  # The number defaults to 0.
   # string: abc_h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   skip: true  # [py<38]
   # skip: true  # [python_impl == "pypy"]  
